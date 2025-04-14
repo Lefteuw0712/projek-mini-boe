@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}Document{% endblock %}</title>
+</head>
+<body>
+
+  <!-- Navbar + Header -->
+
+    <nav>
+      <div class="nav">
+        <div class="logo">
+          <!-- Replace "Logo" text with an image -->
+          <img src="{{ url_for('static', filename='b9.png') }}" alt="Logo" class="logo-img">
+        </div>
+
+        <ul class="data-list">
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Pertanian & Nelayan</a>
+            <ul class="dropdown-content">
+              <li><a href="{{ url_for('pertanian_page') }}">Pertanian</a></li>
+              <li><a href="{{ url_for('nelayan_page') }}">Nelayan</a></li>
+            </ul>
+          </li>
+          <li><a href="{{ url_for('lokasi_penjualan_page') }}">Lokasi Penjualan</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header Content -->
+
+  <!-- Navbar + Header Selesai -->
+
+  <!-- Content Block -->
+  {% block content %}
+  {% endblock %}
+
+  <!-- Footer or Additional Content can go here -->
+
+</body>
+</html>

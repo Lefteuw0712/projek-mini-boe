@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+
+{% block title %}Nelayan di Maluku Tenggara{% endblock %}
+
+{% block content %}
+<div class="nelayan-content">
+    <h1>Nelayan di Maluku Tenggara</h1>
+    <p>Maluku Tenggara memiliki garis pantai yang panjang dan kaya akan sumber daya laut. Masyarakatnya sebagian besar bergantung pada hasil laut sebagai mata pencaharian utama. Nelayan di wilayah ini memiliki keterampilan tradisional dalam menangkap ikan dan hasil laut lainnya, serta menghadapinya dengan tantangan yang cukup besar.</p>
+
+    <h2>Jenis Hasil Laut yang Diperoleh</h2>
+    <p>Nelayan di Maluku Tenggara mengandalkan berbagai jenis ikan dan hasil laut sebagai sumber penghasilan. Beberapa jenis hasil laut yang sering diperoleh oleh nelayan antara lain:</p>
+    <ul>
+        <li><strong>Ikan Puri:</strong> Ikan Puri merupakan salah satu ikan yang banyak ditangkap di perairan Maluku Tenggara. Ikan puri memiliki nilai ekonomi yang tinggi.</li>
+        <li><strong>Ikan Kerapu:</strong> Ikan kerapu juga banyak ditemukan di perairan Maluku Tenggara. Ikan ini banyak dicari oleh pasar lokal maupun internasional karena rasanya yang lezat dan harganya yang tinggi.</li>
+        <li><strong>Rumput laut:</strong> Selain ikan, rumput laut  juga merupakan hasil laut yang bannyak hidup di perairan maluku Tenggara.</li>
+        <li><strong>Kerang:</strong> Kerang merupakan hasil laut lain yang sering diperoleh nelayan. Kerang ini banyak ditemukan di sekitar kawasan pesisir dan merupakan bahan makanan yang digemari oleh banyak orang.</li>
+    </ul>
+
+    <h2>Tantangan yang Dihadapi Nelayan</h2>
+    <p>Namun, sektor Nelayan di Maluku Tenggara juga menghadapi berbagai tantangan, antara lain:</p>
+    <ul>
+        <li><strong>Perubahan Iklim:</strong> Nelayan di Maluku Tenggara juga merasakan dampak perubahan iklim yang menyebabkan cuaca yang tidak menentu. Perubahan suhu laut, angin kencang, dan ombak tinggi dapat memengaruhi hasil tangkapan nelayan.</li>
+        <li><strong>Keterbatasan Infrastruktur:</strong> Infrastruktur pendukung seperti pelabuhan, kapal, dan fasilitas pengolahan ikan di beberapa daerah masih terbatas, yang membuat distribusi hasil laut menjadi kurang optimal.</li>
+        <li><strong>Masalah Penangkapan Ikan yang Berlebihan:</strong> Penangkapan ikan yang berlebihan dapat mengurangi stok ikan di perairan, yang pada akhirnya akan mempengaruhi hasil tangkapan nelayan di masa depan.</li>
+    </ul>
+
+    <h2>Peran Pemerintah dan Masyarakat</h2>
+    <p>Pemerintah setempat berusaha memberikan bantuan berupa kapal, alat tangkap, serta pelatihan untuk meningkatkan keterampilan nelayan dan membantu mereka meningkatkan hasil tangkapan. Selain itu, penting juga untuk mengedukasi masyarakat tentang pentingnya pelestarian sumber daya laut agar dapat terus mendukung kesejahteraan nelayan di masa depan.</p>
+
+    <!-- Gambar Nelayan -->
+    <div class="image-gallery">
+        <img src="{{ url_for('static', filename='d1.jpg') }}" alt="d 1" class="image-item">
+        <img src="{{ url_for('static', filename='d2.jpg') }}" alt="d 2" class="image-item">
+        <img src="{{ url_for('static', filename='d3.png') }}" alt="d 3" class="image-item">
+        <img src="{{ url_for('static', filename='d4.jpg') }}" alt="d 4" class="image-item">
+    </div>
+</div>
+{% endblock %}
+

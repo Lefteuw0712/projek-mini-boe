@@ -1,0 +1,48 @@
+{% extends "index.html" %}
+
+{% block title %}Pertanian di Maluku Tenggara{% endblock %}
+
+{% block content %}
+<div class="pertanian-content">
+    <h1>Pertanian di Maluku Tenggara</h1>
+    <p>Maluku Tenggara memiliki kekayaan alam yang mendukung sektor pertanian, dengan kondisi alam dan iklim tropis yang mendukung tumbuhnya berbagai jenis tanaman.</p>
+
+    <h2>Jenis Tanaman yang Ditanam</h2>
+    <p>Pertanian di Maluku Tenggara mengandalkan berbagai jenis hasil pertanian sebagai sumber penghasilan. jenis hasil pertanian yang sering di peroleh antara lain:</p>
+    <ul>
+            <li><strong>Enbal:</strong> Ubi kayu yang diolah melalui penggilingan dan pemisahan sari beracun.</li>
+            <li><strong>Kelapa:</strong> Tanaman khas pesisir yang digunakan untuk minyak kelapa dan santan.</li>
+            <li><strong>Jagung:</strong> Sumber pangan utama dan pakan ternak.</li>
+            <li><strong>Singkong:</strong> Tumbuh baik dan sering dijadikan tepung untuk kuliner.</li>
+    </ul>
+
+        <h2>Tantangan yang di hadapi petani</h2>
+        <p>Namun sektor pertanian di Maluku Tenggara juga menghadapi berbagai tantangan, antara lain</p>
+        <ul>
+            <li><strong>Kurangnya Infrastruktur:</strong> Daerah sulit dijangkau menghambat distribusi hasil pertanian.</li>
+            <li><strong>Perubahan Iklim:</strong> Bencana alam dan cuaca tidak menentu mempengaruhi hasil pertanian.</li>
+            <li><strong>Akses Terbatas ke Teknologi:</strong> Petani kurang akses ke teknologi pertanian modern.</li>
+        </ul>
+
+
+    <h2>Peran Pemerintah dan Masyarakat</h2>
+    <p>Pemerintah dan masyarakat setempat bekerja bersama untuk mengatasi tantangan ini melalui program pelatihan dan bantuan untuk petani, serta penerapan teknologi pertanian ramah lingkungan.</p>
+
+    <!-- Gambar Pertanian yang Rapi -->
+    <div class="image-gallery">
+        <div class="image-item">
+            <img src="{{ url_for('static', filename='e7.jpg') }}" alt="Pertanian 1">
+        </div>
+        <div class="image-item">
+            <img src="{{ url_for('static', filename='e5.jpg') }}" alt="Pertanian 2">
+        </div>
+        <div class="image-item">
+            <img src="{{ url_for('static', filename='e4.jpg') }}" alt="Pertanian 3">
+        </div>
+        <div class="image-item">
+            <img src="{{ url_for('static', filename='e6.jpg') }}" alt="Pertanian 4">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
